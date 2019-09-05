@@ -20106,31 +20106,33 @@ var Post1 = function Post1() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     prismjs__WEBPACK_IMPORTED_MODULE_2___default.a.highlightAll();
   }, []);
+  var codeBlock1 = "\n  <TextInput\n    onChangeText={setValue}\n    style={[\n      styles.input,\n      {\n        color: isValid\n          ? MAIN_COLORS.BLACK\n          : MAIN_COLORS.ERROR,\n      },\n    ]}\n  />";
+  var codeBlock2 = "\nconst [value, setValue] = useState();\n\n<TextInput\n  value={value}\n  onChangeText={setValue}\n  style={[\n    styles.input,\n    {\n      color: isValid\n        ? MAIN_COLORS.BLACK\n        : MAIN_COLORS.ERROR,\n    },\n  ]}\n/>";
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["Layout"], {
     title: "Dmitriy Gurinenko | Dev Blog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 47
     },
     __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 48
     },
     __self: this
   }, __jsx("div", {
     className: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 49
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 50
     },
     __self: this
   }, __jsx("span", {
@@ -20138,131 +20140,143 @@ var Post1 = function Post1() {
     onClick: router.back,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 51
     },
     __self: this
   }, "\u25C0", ' '), "04/09/2019"), __jsx("div", {
     className: "subtitle",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 57
     },
     __self: this
   }, "React Native: uncontrollable TextInput & missed react updates"), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 61
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 62
     },
     __self: this
   }, "So what is this about?", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 34
-    },
-    __self: this
-  }), "Let's imagine you've already know all the RN basics but every day you try something new with your project. Today I started to code a new form in our current react-native app. After all layout hacks and logic hooks I started to use a simple well-known condition like:", __jsx("pre", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, __jsx("code", {
-    className: "language-javascript",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }, "\n                  <TextInput\n                    onChangeText={setValue}\n                    style={[\n                      styles.input,\n                      {\n                        color: isValid\n                          ? MAIN_COLORS.BLACK\n                          : MAIN_COLORS.ERROR,\n                      },\n                    ]}\n                  />\n          ")), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: this
-  }), "Suddenly I stuck with a simple style prop. It just wasn't updating that color. However when I tried to use an", ' ', __jsx("code", {
-    className: "language-javascript",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: this
-  }, "isValid"), " constant somewhere else in the same Form (stateless/functional) component, it has been rendered and updated correctly.", __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }), __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 64
     },
     __self: this
-  }), "After a little googling I found a quite old opened issue -", ' ', __jsx("a", {
-    href: "https://github.com/facebook/react-native/issues/20131",
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 65
     },
     __self: this
-  }, __jsx("strong", {
+  }), "Let's imagine you've already know all the RN basics but every day you try something new with your project. Today I started to code a new form in our current react-native app. After all layout hacks and logic hooks I started to use a simple well-known condition like:"), __jsx("pre", {
+    style: {
+      maxWidth: 500
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 72
     },
     __self: this
-  }, "https://github.com/facebook/react-native/issues/20131")), ' ', "where guys explained a way to fix this. You just need to make your TextInput controllable and add a", ' ', __jsx("code", {
+  }, __jsx("code", {
     className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
     },
     __self: this
-  }, "value"), " prop. It should use a state value from the", ' ', __jsx("code", {
-    className: "language-javascript",
+  }, codeBlock1)), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 75
     },
     __self: this
-  }, "setValue"), " callback;", __jsx("br", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 76
-    },
-    __self: this
-  }), __jsx("br", {
+  }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 77
     },
     __self: this
-  }), "A full example of a working code:", __jsx("pre", {
+  }, "Suddenly I stuck with a simple style prop. It just wasn't updating that color. However when I tried to use an", ' ', __jsx("code", {
+    className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 80
+    },
+    __self: this
+  }, "isValid"), " constant somewhere else in the same Form (stateless/functional) component, it has been rendered and updated correctly.", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }), "After a little googling I found a quite old opened issue -", ' ', __jsx("a", {
+    href: "https://github.com/facebook/react-native/issues/20131",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, __jsx("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }, "https://github.com/facebook/react-native/issues/20131")), ' ', "where guys explained a way to fix this. You just need to make your TextInput controllable and add a", ' ', __jsx("code", {
+    className: "language-javascript",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, "value"), " prop. It should use a state value from the", ' ', __jsx("code", {
+    className: "language-javascript",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95
+    },
+    __self: this
+  }, "setValue"), " callback;", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }), "A full example of a working code:"), __jsx("pre", {
+    style: {
+      maxWidth: 500
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
     },
     __self: this
   }, __jsx("code", {
     className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 101
     },
     __self: this
-  }, "\n                  const [value, setValue] = useState();\n\n                  <TextInput\n                    value={value}\n                    onChangeText={setValue}\n                    style={[\n                      styles.input,\n                      {\n                        color: isValid\n                          ? MAIN_COLORS.BLACK\n                          : MAIN_COLORS.ERROR,\n                      },\n                    ]}\n                  />\n          ")))))));
+  }, codeBlock2))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Post1);
