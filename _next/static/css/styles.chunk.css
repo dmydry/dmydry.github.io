@@ -27,6 +27,7 @@ a:hover {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 p {
@@ -139,6 +140,8 @@ pre[class*='language-'] {
   padding: 1em;
   margin: 0.5em 0;
   overflow: auto;
+  width: 100%;
+  font-size: 12px;
 }
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {

@@ -21141,11 +21141,6 @@ var Blog = function Blog(_ref2) {
     },
     __self: this
   }, "React Native: uncontrollable TextInput & missed react updates"))), ua && ua.browser && ua.browser.name && __jsx("pre", {
-    style: {
-      paddingLeft: 80,
-      paddingRight: 80,
-      marginBottom: 40
-    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45

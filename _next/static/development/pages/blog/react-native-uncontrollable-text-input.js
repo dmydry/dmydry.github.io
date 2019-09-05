@@ -20129,151 +20129,149 @@ var Post1 = function Post1() {
       lineNumber: 49
     },
     __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: this
   }, __jsx("span", {
     className: "hover",
     onClick: router.back,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
-  }, "\u25C0", ' '), "04/09/2019"), __jsx("div", {
+  }, "\u25C0", ' '), "04/09/2019", __jsx("div", {
     className: "subtitle",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "React Native: uncontrollable TextInput & missed react updates"), __jsx("hr", {
+    style: {
+      marginRight: 20,
+      marginTop: 10
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 57
     },
     __self: this
-  }, "React Native: uncontrollable TextInput & missed react updates"), __jsx("br", {
+  }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 58
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 59
     },
     __self: this
   }, "So what is this about?", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 61
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 62
     },
     __self: this
   }), "Let's imagine you've already know all the RN basics but every day you try something new with your project. Today I started to code a new form in our current react-native app. After all layout hacks and logic hooks I started to use a simple well-known condition like:"), __jsx("pre", {
-    style: {
-      maxWidth: 500
-    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 69
     },
     __self: this
   }, __jsx("code", {
     className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 70
     },
     __self: this
   }, codeBlock1)), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 72
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 73
     },
     __self: this
   }, "Suddenly I stuck with a simple style prop. It just wasn't updating that color. However when I tried to use an", ' ', __jsx("code", {
     className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 76
     },
     __self: this
   }, "isValid"), " constant somewhere else in the same Form (stateless/functional) component, it has been rendered and updated correctly.", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83
+      lineNumber: 79
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 80
     },
     __self: this
   }), "After a little googling I found a quite old opened issue -", ' ', __jsx("a", {
     href: "https://github.com/facebook/react-native/issues/20131",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 82
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 83
     },
     __self: this
   }, "https://github.com/facebook/react-native/issues/20131")), ' ', "where guys explained a way to fix this. You just need to make your TextInput controllable and add a", ' ', __jsx("code", {
     className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 89
     },
     __self: this
   }, "value"), " prop. It should use a state value from the", ' ', __jsx("code", {
     className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 91
     },
     __self: this
   }, "setValue"), " callback;", __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 92
     },
     __self: this
   }), __jsx("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 93
     },
     __self: this
   }), "A full example of a working code:"), __jsx("pre", {
-    style: {
-      maxWidth: 500
-    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 95
     },
     __self: this
   }, __jsx("code", {
     className: "language-javascript",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 96
     },
     __self: this
   }, codeBlock2))))));
